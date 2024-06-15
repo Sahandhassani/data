@@ -1,0 +1,44 @@
+Valacc,ValNormalizedAcc,Valprecision,Valrecall,Valf1,Valauc,Valbacktest,Valnnp,ValProfit %,Testbacktest,TestProfit %,model,Testnnp,Label,PLabel
+0.5240963855421686,0.4999999999999999,0.0,0.0,0.0,0.5,11916.922407498383,7770.894515040845,153.35329008047594,9911.627113778222,108.62555835659222,LogisticRegression(),9124.58105047495,1,1
+0.4879518072289157,0.4655172413793103,0.4375,0.26582278481012656,0.3307086614173228,0.4777389786119599,10190.131435007528,7770.894515040845,131.13202624593814,9493.75436131636,104.04592067075993,"StackingClassifier(estimators=[('GBC',
+                                GradientBoostingClassifier(learning_rate=0.01,
+                                                           max_depth=12)),
+                               ('LRC',
+                                LogisticRegression(C=0.1, max_iter=10000)),
+                               ('GNB', GaussianNB()),
+                               ('DTC',
+                                DecisionTreeClassifier(max_depth=12,
+                                                       min_samples_leaf=4,
+                                                       min_samples_split=6)),
+                               ('KNC',
+                                KNeighborsClassifier(n_neighbors=7,
+                                                     weights='distance')),
+                               ('RFC',
+                                RandomForestClassifier(max_depth=10,
+                                                       n_estimators=500)),
+                               ('LSVC', LinearSVC(C=1, max_iter=10000)),
+                               ('SVC', SVC(C=1, max_iter=5000)),
+                               ('MLP',
+                                MLPClassifier(hidden_layer_sizes=69,
+                                              max_iter=10000))],
+                   final_estimator=LogisticRegression())",9124.58105047495,1,1
+0.5301204819277109,0.4782608695652174,0.5486111111111112,0.8586956521739131,0.6694915254237288,0.49015863689776734,16400.282483667354,21432.786732176224,76.51959910115764,10457.404974619187,161.71517984650546,"VotingClassifier(estimators=[('GBC', GradientBoostingClassifier()),
+                             ('LRC', LogisticRegression()),
+                             ('GNB', GaussianNB()),
+                             ('DTC', DecisionTreeClassifier()),
+                             ('KNC', KNeighborsClassifier()),
+                             ('RFC', RandomForestClassifier()),
+                             ('LSVC', LinearSVC()), ('SVC', SVC()),
+                             ('MLP', MLPClassifier())])",6466.5574280318015,1,1
+0.5120481927710844,0.5059523809523809,0.5033557046979866,0.9146341463414634,0.6493506493506495,0.5168408826945412,13729.000427504952,14459.384693459979,94.94871821008137,13737.577220946876,106.43984015856867,GaussianNB(),12906.424136377254,1,1
+0.536144578313253,0.5114942528735631,0.5555555555555556,0.12658227848101267,0.2061855670103093,0.5173141277462534,11804.774227315076,7770.894515040845,151.91010770338616,13006.994417208249,142.54894931895217,"VotingClassifier(estimators=[('GBC', GradientBoostingClassifier()),
+                             ('LRC', LogisticRegression()),
+                             ('GNB', GaussianNB()),
+                             ('DTC', DecisionTreeClassifier()),
+                             ('KNC', KNeighborsClassifier()),
+                             ('RFC', RandomForestClassifier()),
+                             ('LSVC', LinearSVC()), ('SVC', SVC()),
+                             ('MLP', MLPClassifier())])",9124.58105047495,1,1
+0.463855421686747,0.4184782608695652,0.5161290322580645,0.5217391304347826,0.5189189189189188,0.4568155111633373,6336.285626913011,21432.786732176224,29.563517362866243,9109.953629667763,140.87795138379406,DecisionTreeClassifier(),6466.5574280318015,1,1
+0.5301204819277109,0.5057471264367815,0.6666666666666666,0.02531645569620253,0.048780487804878044,0.5069111014113197,11968.552643621144,7770.894515040845,154.01769539472681,9540.29410982517,104.55596872941999,"SVC(C=1, max_iter=5000)",9124.58105047495,1,1
+0.5240963855421686,0.4999999999999999,0.5,0.08860759493670886,0.15053763440860216,0.5040739124108832,9996.71306143128,7770.894515040845,128.64301583404952,10130.579560547625,111.025147395894,GaussianNB(),9124.58105047495,1,1
